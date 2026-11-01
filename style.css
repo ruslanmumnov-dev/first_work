@@ -1,3 +1,699 @@
-h1{
-    color:red;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+    color: #242927;
+    background: #fff;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button:disabled,
+input:disabled {
+    opacity: 1;
+    cursor: default;
+}
+
+.safar {
+    width: 85%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.sarlavha {
+    position: relative;
+    display: flex;
+    height: 82px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #f1f3f2;
+}
+
+.menyu {
+    display: flex;
+    gap: 29px;
+}
+
+.menyu p {
+    color: #555f5c;
+    font-size: 12px;
+}
+
+.daromad,
+.mehmonxona-tugma,
+.tarikh-tugma,
+.darbor-tugma,
+.aloqa-tugma {
+    min-height: 36px;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 30px;
+    color: #fff;
+    background: #20aa76;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.daromad {
+    position: absolute;
+    right: 0;
+    min-height: 34px;
+}
+
+.qahramon {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 54px;
+    min-height: 440px;
+    padding: 34px 0 41px;
+}
+
+.galereya {
+    position: relative;
+    min-height: 365px;
+    padding: 0 0 60px 66px;
+}
+
+.bino-asosiy {
+    width: 100%;
+    height: 272px;
+    border-radius: 13px;
+    object-fit: cover;
+}
+
+.mehmon-karta {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    z-index: 1;
+    width: 180px;
+    min-height: 118px;
+    padding: 13px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 10px 28px #22372f2b;
+}
+
+.mehmon-yuz {
+    position: absolute;
+    top: -17px;
+    right: -9px;
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: #e8efec;
+    box-shadow: 0 2px 8px #22372f33;
+}
+
+.mehmon-yuz img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.mehmon-ism {
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.mehmon-kasb {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    margin-bottom: 9px;
+    color: #8a9691;
+    font-size: 9px;
+}
+
+.mehmon-kasb span {
+    color: #20aa76;
+}
+
+.mehmon-fikr {
+    color: #34443d;
+    font-size: 10px;
+    line-height: 1.65;
+}
+
+.kichik-suratlar {
+    position: absolute;
+    top: 293px;
+    right: 0;
+    left: 206px;
+    display: flex;
+    gap: 26px;
+}
+
+.kichik-surat-birinchi,
+.kichik-surat-ikkinchi {
+    width: 50%;
+    height: 43px;
+    border-radius: 9px;
+    object-fit: cover;
+}
+
+.mehmonxona-malumot {
+    padding-top: 32px;
+}
+
+.mehmonxona-joy {
+    margin-bottom: 7px;
+    color: #20aa76;
+    font-size: 9px;
+}
+
+.mehmonxona-nom {
+    margin-bottom: 16px;
+    font-size: 19px;
+    font-weight: normal;
+    line-height: 1.35;
+}
+
+.mehmonxona-baho {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.mehmonxona-narx,
+.mehmonxona-reyting {
+    font-size: 11px;
+}
+
+.mehmonxona-narx {
+    padding-right: 17px;
+    border-right: 1px solid #e9ecea;
+    font-weight: bold;
+}
+
+.yulduzlar {
+    color: #f35e61;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.yulduzlar span {
+    color: #e2e4e3;
+}
+
+.mehmonxona-tavsif {
+    margin: 24px 0 26px;
+    color: #37403c;
+    font-size: 9px;
+    line-height: 1.55;
+}
+
+.mehmonxona-tugma {
+    display: block;
+    width: 129px;
+    margin-left: auto;
+}
+
+.kichik-sarlavha,
+.tarikh-kicker,
+.savol-kicker,
+.darbor-kicker,
+.aloqa-kicker {
+    margin-bottom: 10px;
+    color: #117a57;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.mehmonxonaho {
+    padding: 36px 0 80px;
+}
+
+.sarlavha-qator {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.mehmonxonaho-sarlavha {
+    font-size: 29px;
+    font-weight: normal;
+}
+
+.mehmonxonaho-izoh {
+    margin-top: 7px;
+    color: #78827f;
+    font-size: 12px;
+}
+
+.hamma-tugma {
+    min-height: 34px;
+    padding: 0 16px;
+    border: 1px solid #e8f1ed;
+    border-radius: 30px;
+    color: #117a57;
+    background: #f1f8f5;
+    font-size: 11px;
+}
+
+.kartaho {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.mehmonxona-ya,
+.mehmonxona-soho,
+.mehmonxona-bridge {
+    overflow: hidden;
+    border: 1px solid #edf0ef;
+    border-radius: 13px;
+    background: #fff;
+}
+
+.ya-surat,
+.soho-surat,
+.bridge-surat {
+    width: 100%;
+    height: 205px;
+    object-fit: cover;
+}
+
+.ya-surat {
+    object-position: 54% center;
+}
+
+.soho-surat {
+    object-position: center;
+}
+
+.bridge-surat {
+    object-position: 52% center;
+}
+
+.ya-matn,
+.soho-matn,
+.bridge-matn {
+    padding: 17px;
+}
+
+.ya-tur,
+.soho-tur,
+.bridge-tur {
+    margin-bottom: 7px;
+    color: #117a57;
+    font-size: 9px;
+}
+
+.ya-nom,
+.soho-nom,
+.bridge-nom {
+    min-height: 21px;
+    margin-bottom: 13px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.ya-narx,
+.soho-narx,
+.bridge-narx {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 10px;
+}
+
+.ya-narx span,
+.soho-narx span,
+.bridge-narx span {
+    color: #929b97;
+    font-size: 9px;
+}
+
+.ya-narx strong,
+.soho-narx strong,
+.bridge-narx strong {
+    margin-left: auto;
+    color: #f26768;
+    font-size: 10px;
+}
+
+.tarikh {
+    position: relative;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+}
+
+.tarikh::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: 0;
+    width: 100vw;
+    background: #eff8f4;
+    content: "";
+    transform: translateX(-50%);
+}
+
+.tarikh-surat {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 330px;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+}
+
+.tarikh-matn {
+    position: relative;
+    z-index: 1;
+    padding: 38px 48px;
+}
+
+.tarikh-sarlavha {
+    margin-bottom: 16px;
+    font-size: 29px;
+    font-weight: normal;
+}
+
+.tarikh-para,
+.tarikh-para-dig {
+    margin-bottom: 13px;
+    color: #66716d;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.tarikh-tugma {
+    margin-top: 8px;
+}
+
+.savolho {
+    display: grid;
+    grid-template-columns: .78fr 1.22fr;
+    gap: 80px;
+    padding: 108px 5% 90px;
+}
+
+.savol-sarlavha {
+    max-width: 330px;
+    font-size: 31px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.savol-sarlavha span {
+    display: block;
+    color: #20aa76;
+}
+
+.savol-tavsif {
+    max-width: 285px;
+    margin-top: 15px;
+    color: #78827f;
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+.savol-lista {
+    display: grid;
+    align-content: start;
+    gap: 10px;
+}
+
+.savol-ochiq,
+.savol-yopiq,
+.savol-yopiq-2 {
+    border: 1px solid #e4e9e6;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.savol-ochiq {
+    padding: 17px 20px;
+    box-shadow: 0 5px 16px #1830250f;
+}
+
+.savol-satrl,
+.savol-yopiq,
+.savol-yopiq-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.savol-1,
+.savol-2,
+.savol-3 {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.savol-1-belgi,
+.savol-2-belgi,
+.savol-3-belgi {
+    font-size: 16px;
+}
+
+.javob-1 {
+    margin: 12px 30px 0 0;
+    color: #78827e;
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+.savol-yopiq,
+.savol-yopiq-2 {
+    min-height: 49px;
+    padding: 0 20px;
+}
+
+.darbor {
+    position: relative;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: .88fr 1.12fr;
+    align-items: center;
+    min-height: 278px;
+    margin: 0 18px 90px;
+    padding: 30px 46px;
+    border-radius: 14px;
+}
+
+.darbor::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: 0;
+    width: 100vw;
+    background: #eaf7f1;
+    content: "";
+    transform: translateX(-50%);
+}
+
+.darbor-logo {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 300px;
+    height: 220px;
+    overflow: hidden;
+    border: 1px solid #edf0ee;
+    border-radius: 17px;
+    background: #fff;
+    box-shadow: 0 5px 18px #1b2f2724;
+}
+
+.darbor-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.darbor-matn {
+    position: relative;
+    z-index: 1;
+    padding: 12px 0 12px 42px;
+}
+
+.darbor-sarlavha {
+    margin-bottom: 12px;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.darbor-para,
+.darbor-para-dig {
+    margin-bottom: 10px;
+    color: #68746f;
+    font-size: 11px;
+    line-height: 1.75;
+}
+
+.darbor-tugma {
+    margin-top: 3px;
+}
+
+.manzil {
+    position: relative;
+    min-height: 395px;
+    margin-bottom: 80px;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #f1f2f0;
+}
+
+.xarita {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .8;
+}
+
+.xarita-nuqta {
+    position: absolute;
+    top: 38%;
+    left: 67%;
+    width: 16px;
+    height: 16px;
+    border: 4px solid #20aa7638;
+    border-radius: 50%;
+    background: #20aa76;
+    box-shadow: 0 0 0 14px #20aa761f;
+    
+}
+
+.aloqa-karta {
+    position: absolute;
+    right: 4%;
+    bottom: 24px;
+    left: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    min-height: 116px;
+    padding: 22px 28px;
+    border: 1px solid #e7ece9;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 12px 30px #25352e14;
+}
+
+.aloqa-sarlavha {
+    font-size: 19px;
+    font-weight: normal;
+}
+
+.aloqa-tavsif {
+    margin-top: 6px;
+    color: #78827f;
+    font-size: 10px;
+}
+
+.aloqa-amal {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.email {
+    width: 190px;
+    height: 40px;
+    padding: 0 14px;
+    border: 1px solid #edf0ee;
+    border-radius: 24px;
+    background: #f8faf9;
+    font-size: 10px;
+}
+
+.poyon {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr 1fr 1fr;
+    gap: 48px;
+    padding: 0 3% 35px;
+}
+
+.poyon-brand {
+    max-width: 250px;
+}
+
+.poyon-nishon {
+    width: 125px;
+    height: 43px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.poyon-shior {
+    max-width: 215px;
+    margin: 12px 0;
+    color: #7e8884;
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+.poyon-ijtimoiy {
+    display: flex;
+    gap: 10px;
+}
+
+.poyon-ijtimoiy img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+.poyon-ustun,
+.poyon-ustun-2,
+.poyon-ustun-3 {
+    padding-top: 3px;
+}
+
+.poyon-sarlavha-1,
+.poyon-sarlavha-2,
+.poyon-sarlavha-3 {
+    margin-bottom: 14px;
+    font-size: 12px;
+}
+
+.poyon-link-1,
+.poyon-link-2,
+.poyon-link-3,
+.poyon-link-4,
+.poyon-link-5,
+.poyon-link-6,
+.poyon-link-7,
+.poyon-link-8,
+.poyon-link-9,
+.poyon-link-10 {
+    margin-bottom: 10px;
+    color: #79837f;
+    font-size: 10px;
+}
+
+.muallif {
+    padding: 16px 3%;
+    border-top: 1px solid #f0f2f1;
+    color: #9aa39f;
+    font-size: 9px;
 }
